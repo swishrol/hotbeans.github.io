@@ -1,0 +1,419 @@
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+  z-index: 1000; 
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3); 
+}
+
+
+
+/* Charles Flip card */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.charles-card {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.charles-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.charles-card:hover .charles-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.charles-card-front, .charles-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.charles-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.charles-card-back {
+  background-color: navy;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+
+/* Eva Flip card */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.eva-card {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.eva-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.eva-card:hover .eva-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.eva-card-front, .eva-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.eva-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.eva-card-back {
+  background-color: navy;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+/* Dave Flip card */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.dave-card {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.dave-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.dave-card:hover .dave-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.dave-card-front, .dave-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.dave-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.dave-card-back {
+  background-color: navy;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+/* May Flip card */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.may-card {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.may-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.may-card:hover .may-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.may-card-front, .may-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.may-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.may-card-back {
+  background-color: navy;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Nathan Flip card */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.nathan-card {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.nathan-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.nathan-card:hover .nathan-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.nathan-card-front, .nathan-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.nathan-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.nathan-card-back {
+  background-color: navy;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Megan Flip card */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.megan-card {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.megan-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.megan-card:hover .megan-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.megan-card-front, .megan-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.megan-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.megan-card-back {
+  background-color: navy;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.charles-card,
+.eva-card,
+.dave-card,
+.may-card,
+.nathan-card,
+.megan-card {
+    display: inline-block; 
+    transform: scale(0.6); 
+    transform-origin: center;
+    margin: -60px;
+}
+
+
+/* job card */
+.profiles-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 40px 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card {
+  min-width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #a7bebb;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #eee;
+}
+
+.card-content {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.price {
+  color: #2c3e50;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.description {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 10px 0;
+  min-height: 60px;
+}
+
+button {
+  background: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+
+/* jobs */
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+
+
+.footer {
+  position: sticky;
+  top: 0;
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+  text-align: center;
+}
