@@ -4,12 +4,13 @@
   top: 0;
   padding: 10px 16px;
   background: #555;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
   color: #f1f1f1;
   z-index: 1000; 
   box-shadow: 0 2px 10px rgba(0,0,0,0.3); 
 }
-
-
 
 /* Charles Flip card */
 
