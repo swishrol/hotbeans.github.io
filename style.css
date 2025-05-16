@@ -1,16 +1,16 @@
 /* Header */
 .header {
-  position: sticky;
-  top: 0;
-  padding: 10px 16px;
-  background: #555;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  color: #f1f1f1;
-  z-index: 1000; 
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3); 
+    position: sticky;
+    top: 0;
+    padding: 10px 16px;
+    background: #555;
+    display: flex;          /* flexbox ON */
+    justify-content: center; /* center horizontally */
+    align-items: center;    /* center vertically */
+    height: 100px;
+    color: #f1f1f1;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 
