@@ -23,6 +23,19 @@
   }
 }
 
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* Charles Flip card */
 
@@ -68,7 +81,7 @@
 
 /* Style the back side */
 .charles-card-back {
-  background-color: navy;
+  background-color: rgb(89, 89, 153);
   color: white;
   transform: rotateY(180deg);
 }
@@ -120,7 +133,7 @@
 
 /* Style the back side */
 .eva-card-back {
-  background-color: navy;
+  background-color: rgb(89, 89, 153);
   color: white;
   transform: rotateY(180deg);
 }
@@ -171,7 +184,7 @@
 
 /* Style the back side */
 .dave-card-back {
-  background-color: navy;
+  background-color: rgb(89, 89, 153);
   color: white;
   transform: rotateY(180deg);
 }
@@ -222,7 +235,7 @@
 
 /* Style the back side */
 .may-card-back {
-  background-color: navy;
+  background-color: rgb(89, 89, 153)navy;
   color: white;
   transform: rotateY(180deg);
 }
@@ -271,7 +284,7 @@
 
 /* Style the back side */
 .nathan-card-back {
-  background-color: navy;
+  background-color: rgb(89, 89, 153);
   color: white;
   transform: rotateY(180deg);
 }
@@ -320,7 +333,7 @@
 
 /* Style the back side */
 .megan-card-back {
-  background-color: navy;
+  background-color: rgb(89, 89, 153);
   color: white;
   transform: rotateY(180deg);
 } 
