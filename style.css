@@ -37,6 +37,57 @@
   background-size: cover;
 }
 
+/* about us */
+/* ABOUT US SECTION */
+#about-us {
+  background: #6f7076;
+  color: #000000;
+  padding: 60px 70px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Text block */
+.about-text {
+  flex: 1 1 300px;
+}
+
+.about-text h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.about-text p {
+  line-height: 1.6;
+}
+
+/* Image block */
+.about-image {
+  flex: 1 1 300px;
+  overflow: hidden;
+}
+
+/* Start with image off-screen to the right */
+.about-image img {
+  max-width: 100%;
+  display: block;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+/* When JS adds .visible, slide it in */
+.about-image.visible img {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
 /* Charles Flip card */
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
