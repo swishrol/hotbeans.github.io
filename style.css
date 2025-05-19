@@ -1,18 +1,58 @@
+/* site-wide div */
+.site-wrapper {
+  padding-left: 10%;
+}
+
+
+
+
+
 /* Header */
 .header {
   position: sticky;
   top: 0;
   padding: 10px 16px;
-  background: #555;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #724b34;
   width: 100%;
   height: 100px;
-  color: #f1f1f1;
+  color: #301f17 ;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
+
+
+
+
+/* Reset any annoying default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gradient-bridge-abtus-proftrainees {
+  height: 150px;
+  background: linear-gradient(to bottom, #38b2a3, #4cc8A3);
+}
+
+.gradient-bridge-proftrainees-jobs {
+  height: 150px;
+  background: linear-gradient(to bottom, #4cc8A3, #87Dba5);
+}
+
+.gradient-bridge-jobs-regform {
+  height: 150px;
+  background: linear-gradient(to bottom, #87Dba5, #4cc8A3);
+}
+
+.gradient-bridge-regform-courses {
+  height: 150px;
+  background: linear-gradient(to bottom, #4cc8A3, #38b2a3);
+}
+
 
 /* for mobile optimisation */
 @media screen and (max-width: 600px) {
@@ -38,10 +78,9 @@
 }
 
 /* about us */
-/* ABOUT US SECTION */
 #about-us {
-  background: #6f7076;
-  color: #000000;
+  background: #38b2a3;
+  color: #301f17 ;
   padding: 60px 70px;
 }
 
@@ -88,6 +127,10 @@
 }
 
 
+/* employee prof */
+.trainees {
+  background-color: #4cc8A3;
+}
 /* Charles Flip card */
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -127,13 +170,13 @@
 /* Style the front side (fallback if image is missing) */
 .charles-card-front {
   background-color: #bbb;
-  color: black;
+  color: #301f17 ;
 }
 
 /* Style the back side */
 .charles-card-back {
   background-color: rgb(89, 89, 153);
-  color: white;
+  color: #301f17 ;
   transform: rotateY(180deg);
 }
 
@@ -179,13 +222,13 @@
 /* Style the front side (fallback if image is missing) */
 .eva-card-front {
   background-color: #bbb;
-  color: black;
+  color: #301f17 ;
 }
 
 /* Style the back side */
 .eva-card-back {
   background-color: rgb(89, 89, 153);
-  color: white;
+  color: #301f17 ;
   transform: rotateY(180deg);
 }
 
@@ -230,13 +273,13 @@
 /* Style the front side (fallback if image is missing) */
 .dave-card-front {
   background-color: #bbb;
-  color: black;
+  color: #301f17;
 }
 
 /* Style the back side */
 .dave-card-back {
   background-color: rgb(89, 89, 153);
-  color: white;
+  color: #301f17;
   transform: rotateY(180deg);
 }
 
@@ -281,13 +324,13 @@
 /* Style the front side (fallback if image is missing) */
 .may-card-front {
   background-color: #bbb;
-  color: black;
+  color: #301f17;
 }
 
 /* Style the back side */
 .may-card-back {
   background-color: rgb(89, 89, 153)navy;
-  color: white;
+  color: #301f17;
   transform: rotateY(180deg);
 }
 
@@ -330,13 +373,13 @@
 /* Style the front side (fallback if image is missing) */
 .nathan-card-front {
   background-color: #bbb;
-  color: black;
+  color: #301f17;
 }
 
 /* Style the back side */
 .nathan-card-back {
   background-color: rgb(89, 89, 153);
-  color: white;
+  color: #301f17;
   transform: rotateY(180deg);
 }
 
@@ -379,13 +422,13 @@
 /* Style the front side (fallback if image is missing) */
 .megan-card-front {
   background-color: #bbb;
-  color: black;
+  color: #301f17;
 }
 
 /* Style the back side */
 .megan-card-back {
   background-color: rgb(89, 89, 153);
-  color: white;
+  color: #301f17;
   transform: rotateY(180deg);
 } 
 
@@ -442,14 +485,14 @@
 }
 
 .price {
-  color: #2c3e50;
+  color: #301f17;
   font-size: 1.25rem;
   font-weight: bold;
   margin: 10px 0;
 }
 
 .description {
-  color: #666;
+  color: #301f17;
   font-size: 0.9rem;
   margin: 10px 0;
   min-height: 60px;
@@ -457,7 +500,7 @@
 
 button {
   background: #3498db;
-  color: white;
+  color: #301f17;
   padding: 10px 20px;
   border-radius: 25px;
   border: none;
@@ -475,19 +518,123 @@ button:hover {
 /* jobs */
 
 .card {
-  /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
 }
-
-/* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
-/* Add some padding inside the card container */
-.container {
+.container-job {
+  background-color: beige;
   padding: 2px 16px;
+}
+
+.cards-container {
+    display: flex;
+    gap: 30px;
+    padding: 20px 70px;
+    overflow-x: auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    min-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+
+.container {
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #eee;
+}
+
+h4 {
+    margin: 10px 0;
+    color: #301f17;
+    font-size: 1.2em;
+}
+
+p {
+    color: #301f17;
+    margin: 8px 0;
+}
+
+
+/* register */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container-reg {
+  padding: 16px;
+  background-color: #4cc8A3;
+  color: #301f17;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 75%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  color: #170f0b;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  background-color: #301f17;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #34c1c8;
+  color: #301f17;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: #301f17;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #3d454f;
+  text-align: center;
 }
 
 
@@ -496,7 +643,8 @@ button:hover {
   position: sticky;
   top: 0;
   padding: 10px 16px;
-  background: #555;
-  color: #f1f1f1;
+  background: #724b34;
+  color: #301f17;
   text-align: center;
 }
+
