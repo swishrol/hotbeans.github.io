@@ -92,7 +92,7 @@
 
 /* Start with image off-screen to the right */
 .about-image img {
-  max-width: 50%;
+  max-width: 65%;
   display: block;
   transform: translateX(100%);
   opacity: 0;
@@ -554,6 +554,7 @@ hr {
 
 .registerbtn:hover {
   opacity: 1;
+  background-color: #288b91;
 }
 
 /* Add a blue text color to links */
@@ -566,7 +567,6 @@ a {
   background-color: #3d454f;
   text-align: center;
 }
-
 
 
 
@@ -587,7 +587,7 @@ a {
   box-shadow: 0 4px 8px #0000001a;
   border-radius: 12px;
   overflow: hidden;
-  background: #724b34;
+  background: #F7F0E6;
   transition: transform 0.2s;
   display: flex;
   flex-direction: column;
@@ -631,7 +631,7 @@ a {
 }
 
 button {
-  background: #3498db;
+  background: #34c1c8;
   color: #301f17;
   padding: 10px 20px;
   border-radius: 25px;
@@ -643,7 +643,7 @@ button {
 }
 
 button:hover {
-  background: #2980b9;
+  background: #288b91;
 }
 
 @media (max-width: 768px) {
