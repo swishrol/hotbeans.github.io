@@ -1,6 +1,12 @@
 
+/* Reset default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Header */
+/* ---------------------------------------HEADER------------------------------------------------------------------------------ */
 .header {
   position: sticky;
   top: 0;
@@ -14,16 +20,6 @@
   color: #301f17 ;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-}
-
-
-
-
-/* Reset any annoying default browser spacing */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .gradient-bridge-abtus-proftrainees {
@@ -57,20 +53,15 @@
 }
 
 .parallax {
-  /* The image used */
   background-image: url("images/background.png");
-
-  /* Set a specific height */
   min-height: 500px;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
 }
 
-/* about us */
+/* ---------------------------------------ABOUT US------------------------------------------------------------------------------ */
 #about-us {
   background: #38b2a3;
   color: #301f17 ;
@@ -83,14 +74,11 @@
   flex-wrap: wrap;
 }
 
-
-/* Image block */
 .about-image {
   flex: 1 1 300px;
   overflow: hidden;
 }
 
-/* Start with image off-screen to the right */
 .about-image img {
   max-width: 65%;
   display: block;
@@ -99,26 +87,24 @@
   transition: transform 3s ease-out, opacity 3s ease-out;
 }
 
-/* When JS adds .visible, slide it in */
 .about-image.visible img {
   transform: translateX(0);
   opacity: 1;
 }
 
 
-/* employee prof */
+/* ---------------------------------------EMPLOYEE PROFILES------------------------------------------------------------------------------ */
 .trainees {
   background-color: #4cc8A3;
 }
 
-/* prof container */
 .profiles-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px; /* space between cards */
+  gap: 40px; 
   padding: 40px;
-  max-width: 1300px; /* control line breaks */
+  max-width: 1300px; 
   margin: 0 auto;
 }
 
@@ -132,7 +118,6 @@
   perspective: 1000px;
 }
 
-/* This container is needed to position the front and back side */
 .charles-card-inner {
   position: relative;
   width: 100%;
@@ -142,50 +127,42 @@
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .charles-card:hover .charles-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .charles-card-front, .charles-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .charles-card-front {
   background-color: #bbb;
   color: #301f17 ;
 }
 
-/* Style the back side */
 .charles-card-back {
-  background-color: rgb(89, 89, 153);
+  background-color: #caba9c;
   color: #301f17 ;
   transform: rotateY(180deg);
 }
 
 
 
-
-/* Eva Flip card */
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.eva-card {
+/* Kelly Flip card */
+.kelly-card {
   background-color: transparent;
   width: 400px;
   height: 300px;
   flex-wrap: wrap;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
 }
 
-/* This container is needed to position the front and back side */
-.eva-card-inner {
+.kelly-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -194,29 +171,25 @@
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.eva-card:hover .eva-card-inner {
+.kelly-card:hover .kelly-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
-.eva-card-front, .eva-card-back {
+.kelly-card-front, .kelly-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
-.eva-card-front {
+.kelly-card-front {
   background-color: #bbb;
   color: #301f17 ;
 }
 
-/* Style the back side */
-.eva-card-back {
-  background-color: rgb(89, 89, 153);
+.kelly-card-back {
+  background-color: #caba9c;
   color: #301f17 ;
   transform: rotateY(180deg);
 }
@@ -224,18 +197,15 @@
 
 
 /* Dave Flip card */
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .dave-card {
   background-color: transparent;
   width: 400px;
   height: 300px;
   flex-wrap: wrap;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
 }
 
-/* This container is needed to position the front and back side */
 .dave-card-inner {
   position: relative;
   width: 100%;
@@ -245,29 +215,25 @@
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .dave-card:hover .dave-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .dave-card-front, .dave-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .dave-card-front {
   background-color: #bbb;
   color: #301f17;
 }
 
-/* Style the back side */
 .dave-card-back {
-  background-color: rgb(89, 89, 153);
+  background-color: #caba9c;
   color: #301f17;
   transform: rotateY(180deg);
 }
@@ -275,18 +241,15 @@
 
 
 /* May Flip card */
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .may-card {
   background-color: transparent;
   width: 400px;
   height: 300px;
   flex-wrap: wrap;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
 }
 
-/* This container is needed to position the front and back side */
 .may-card-inner {
   position: relative;
   width: 100%;
@@ -296,46 +259,39 @@
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .may-card:hover .may-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .may-card-front, .may-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .may-card-front {
   background-color: #bbb;
   color: #301f17;
 }
 
-/* Style the back side */
 .may-card-back {
-  background-color: rgb(89, 89, 153);
+  background-color: #caba9c;
   color: #301f17;
   transform: rotateY(180deg);
 }
 
 /* Nathan Flip card */
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .nathan-card {
   background-color: transparent;
   width: 400px;
   height: 300px;
   flex-wrap: wrap;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px; 
 }
 
-/* This container is needed to position the front and back side */
 .nathan-card-inner {
   position: relative;
   width: 100%;
@@ -345,46 +301,39 @@
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .nathan-card:hover .nathan-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .nathan-card-front, .nathan-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .nathan-card-front {
   background-color: #bbb;
   color: #301f17;
 }
 
-/* Style the back side */
 .nathan-card-back {
-  background-color: rgb(89, 89, 153);
+  background-color: #caba9c;
   color: #301f17;
   transform: rotateY(180deg);
 }
 
 /* Megan Flip card */
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .megan-card {
   background-color: transparent;
   width: 400px;
   height: 300px;
   flex-wrap: wrap;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
 }
 
-/* This container is needed to position the front and back side */
 .megan-card-inner {
   position: relative;
   width: 100%;
@@ -394,29 +343,25 @@
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .megan-card:hover .megan-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .megan-card-front, .megan-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .megan-card-front {
   background-color: #bbb;
   color: #301f17;
 }
 
-/* Style the back side */
 .megan-card-back {
-  background-color: rgb(89, 89, 153);
+  background-color: #caba9c;
   color: #301f17;
   transform: rotateY(180deg);
 } 
@@ -433,11 +378,13 @@
 }
 
 
-/* jobs */
+/* for mobile optimisation */
+
+
+/* ---------------------------------------JOBS------------------------------------------------------------------------------ */
 
 .jobs {
   background-color: #87Dba5;
-  padding: 40px 5%;
   box-sizing: border-box;
 }
 
@@ -475,7 +422,7 @@
 }
 
 .container-job {
-  background-color: #724b34;
+  background-color: #caba9c;
   padding: 16px;
   flex-grow: 1;
   display: flex;
@@ -496,6 +443,8 @@
   font-size: 1rem;
 }
 
+
+/* for mobile optimisation */
 @media (max-width: 768px) {
   .card-job {
     max-width: 100%;
@@ -504,20 +453,18 @@
 }
 
 
-/* register */
+/* ---------------------------------------REGISTER------------------------------------------------------------------------------ */
 
 * {
   box-sizing: border-box;
 }
 
-/* Add padding to containers */
 .container-reg {
   padding: 16px;
   background-color: #4cc8A3;
   color: #301f17;
 }
 
-/* Full-width input fields */
 input[type=text], input[type=password] {
   width: 75%;
   padding: 15px;
@@ -533,14 +480,12 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 
-/* Overwrite default styles of hr */
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
   background-color: #301f17;
 }
 
-/* Set a style for the submit button */
 .registerbtn {
   background-color: #34c1c8;
   color: #301f17;
@@ -557,29 +502,30 @@ hr {
   background-color: #288b91;
 }
 
-/* Add a blue text color to links */
 a {
   color: #301f17;
 }
 
-/* Set a grey background color and center the text of the "sign in" section */
 .signin {
   background-color: #3d454f;
   text-align: center;
 }
 
+/* for mobile optimisation */
 
 
-/* Courses */
+
+
+/* ---------------------------------------COURSES------------------------------------------------------------------------------ */
 .cards-container-course {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 20px 5%;
+    max-width: 1300px;
+    margin: 0 auto;
     box-sizing: border-box;
 }
-
 
 .card {
   flex: 1 1 250px;
@@ -587,7 +533,7 @@ a {
   box-shadow: 0 4px 8px #0000001a;
   border-radius: 12px;
   overflow: hidden;
-  background: #F7F0E6;
+  background: #caba9c;
   transition: transform 0.2s;
   display: flex;
   flex-direction: column;
@@ -609,8 +555,10 @@ a {
 .card-content {
   padding: 15px;
   flex-grow: 1;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: #301f17;
 }
 
 .price {
@@ -646,14 +594,23 @@ button:hover {
   background: #288b91;
 }
 
-@media (max-width: 768px) {
-    .card {
-        max-width: 100%;    /* cards take full width on smaller screens */
-        min-height: auto;
-    }
+
+/* for mobile optimisation */
+@media (max-width: 900px) {
+  .cards-container-course {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-/* Footer */
+@media (max-width: 600px) {
+  .cards-container-course {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* ---------------------------------------FOOTER------------------------------------------------------------------------------ */
 
 .footer {
   position: sticky;
@@ -664,3 +621,5 @@ button:hover {
   text-align: center;
 }
 
+
+/* for mobile optimisation */
