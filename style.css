@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+pre {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: pre;
+  margin: 1em 0;
+}
+
 /* ---------------------------------------HEADER------------------------------------------------------------------------------ */
 .header {
   position: sticky;
@@ -155,11 +162,21 @@
 /* Kelly Flip card */
 .kelly-card {
   background-color: transparent;
+  position: relative;
   width: 400px;
   height: 300px;
   flex-wrap: wrap;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
+}
+
+.badge-image {
+  position: absolute;
+  top: -40px;
+  right: -35px;
+  width: 100px;
+  z-index: 5;
+  pointer-events: none; /* allows clicks to pass through */
 }
 
 .kelly-card-inner {
@@ -367,7 +384,7 @@
 } 
 
 .charles-card,
-.eva-card,
+.kelly-card,
 .dave-card,
 .may-card,
 .nathan-card,
